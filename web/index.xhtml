@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+    <h:head>
+        <meta charset="utf-8"/>
+        <title>Alumnos POO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </h:head>
+    <h:body>
+        <form jsf:prependId="false">
+            <h1>Bienvenido Ingresa los Datos</h1>
+            <h:messages globalOnly="true"/>
+        <p>
+        <input jsf:id="nombre" type="text" placeholder="Nombre"
+               jsf:required="true" jsf:value="#{controladorA.nombre}"/>
+        <h:message for="nombre"/>
+        </p>
+        <p>
+        <input jsf:id="apellido" type="text" placeholder="Apellido"
+               jsf:required="true" jsf:value="#{controladorA.apellido}"/>
+        <h:message for="apellido"/>
+        </p>
+        <p>
+        <input jsf:id="ciudad" type="text" placeholder="Ciudad"
+               jsf:required="true" jsf:value="#{controladorA.ciudad}"/>
+        <h:message for="ciudad"/>
+        </p>
+        <p>
+        <input jsf:id="materias" type="text" placeholder="Materias"
+               jsf:required="true" jsf:value="#{controladorA.materias}"/>
+        <h:message for="materias"/>
+        </p>
+      <p>
+          <button jsf:action="#{controladorA.datosfinales()}">Aceptar</button>
+      </p>
+        
+       </form>  
+    </h:body>
+</html>
+
